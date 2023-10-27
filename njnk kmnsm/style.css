@@ -1,0 +1,252 @@
+#body{
+    width: 100%;
+    height: 100vh;
+}
+#navlink1{
+    position: relative;
+    font-weight: 700;
+    transition: 1.2s;
+    }
+    
+    #navlink1::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2.7px;
+    background-color:   rgb(255, 217, 0);
+    left: 0;
+    bottom: -4px;
+    transition: ease .43s;
+    }
+    #navlink1:hover::after{
+    width: 100%;
+    }
+   
+#navlink2{
+    position: relative;
+    font-weight: 700;
+    transition: 1.2s;
+    }
+    
+    #navlink2::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2.7px;
+    background-color:   rgb(255, 217, 0);
+    left: 0;
+    bottom: -4px;
+    transition: ease .43s;
+    }
+    #navlink2:hover::after{
+    width: 100%;
+    }
+    #navlink2:hover{
+    } 
+    
+#navlink3{
+    position: relative;
+    font-weight: 700;
+    transition: 1.2s;
+    }
+    
+    #navlink3::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2.7px;
+
+        background-color:   rgb(255, 217, 0);;
+    left: 0;
+    bottom: -4px;
+    transition: ease .43s;
+    }
+    #navlink3:hover::after{
+    width: 100%;
+    }
+    #navlink3:hover{
+    } 
+    
+    
+    
+    /* button:hover{
+        background-color: rgb(255, 217, 0);
+    } */
+    *::selection{
+        background-color:rgb(255, 217, 0);
+        color: #fff;
+    }
+    #boki{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+    }
+    .left{
+        width: 50%;
+        height: 100vh;
+    }
+    .right{
+        width: 50%;
+        height: 90vh;
+       
+    }
+    .kio{
+width: 100px;
+height: 39px;
+text-align: center;
+        border:none;
+        border-radius: 10px;
+        border: 2.9px solid #000;
+        color: #000;
+        overflow: hidden;
+    font-weight: 700;
+        cursor: pointer;    
+        background-color: transparent;
+    transition:  1.2s;
+    position: relative;
+    }
+    .kio1{
+width: 100px;
+height: 39px;
+text-align: center;
+        border:none;
+        border-radius: 10px;
+        border: 2.9px solid #000;
+        color: #000;
+        overflow: hidden;
+    font-weight: 700;
+        cursor: pointer;    
+        background-color: transparent;
+    transition:  1.2s;
+    position: relative;
+    }
+.span{
+    position: absolute;
+    z-index: -1;
+    background-color: rgb(255, 217, 0);
+    width: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+
+    transition: 0.9s;
+}
+.kio:hover .span{
+    width: 100%;
+}
+.kio1:hover .span{
+    width: 100%;
+}
+#jk{
+    position: absolute;
+    z-index: -1;
+    background-color: rgb(255, 217, 0);
+    width: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    transition: 0.9s;
+}
+button:hover #jk{
+    width: 100%;
+}
+.text{
+    padding: 5% 1% 1% 5%;
+    line-height: 2;
+}
+.text h1{
+    color: rgb(255, 217, 0);
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 2;
+}
+.text h2{
+    font-weight: 700;
+    color: #000;
+}
+p{
+    color: #000;
+}
+#readp{
+color: #000;
+    padding: 3% 0 2% 0;
+}
+.man{
+    z-index: 999;
+}
+.heart-div{
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+.heart-div i{
+    color: red;
+    font-size: 130px;
+    transition: all 0.9s ease-in-out;
+opacity: 0;
+}
+@media (max-width:900px) {
+    .right{
+        width: 100%;
+display: flex;
+justify-content: center;
+
+    }
+    .right .man{
+        width: 100%;
+    }
+    #boki{
+        flex-direction: column-reverse;
+        min-height: 150%;
+    }
+    #nav{
+        width: 10%;
+        display: grid;
+    }
+    .left{
+        width: 100%;
+    }
+    .text{
+        width: 100%;
+        padding: 0%;
+
+    }
+    .text h1{
+        font-size: 70px;
+        width: 100%;
+        padding: 0%;
+    }
+    .text h2{
+        font-size: 50px;
+        width: 100%;padding: 0%;
+    }
+    .text p{
+        font-size: 30px;
+        width: 100%;padding: 0%;
+    }
+    .kio{
+        width: 200px;
+        font-size: 26px;
+        height: 70px;
+        font-weight: 720;padding: 0%;
+    }
+    .kio1{
+        width: 200px;
+        font-size: 26px;
+        font-weight: 720;padding: 0%;
+        height: 70px;
+    }
+    
+    #nav #toojh{
+        color: red;
+
+    }
+    #hgy{
+        width: 100px;
+    }
+    #toogle{
+        width: 100px;
+    }
+}
